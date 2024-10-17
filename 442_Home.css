@@ -1,0 +1,322 @@
+:root {
+  --primary-color: #011b2b;
+  --secondary-color: #009cd6;
+  --third-color: #ffff;
+  --forth_color: #022b44;
+  --sixth-color: rgb(169, 179, 184);
+  --firth-color: rgb(54, 75, 85);
+  --font-family: Arial, sans-serif;
+  --font-size: 17px;
+}
+* {
+  transition: 1s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+}
+
+.navbar-Serction {
+  padding-bottom: 10px;
+  z-index: 2;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  position: fixed;
+
+  width: 100%;
+}
+
+.ff-logo {
+  width: 160px;
+  margin-left: 13px;
+  margin-top: 0%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+.nav-links li :hover {
+  padding: 10px;
+  background-color: var(--secondary-color);
+}
+.nav-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links a:hover {
+  color: var(--third-color);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  margin: 4px 0;
+}
+.header_text {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--third-color);
+  font-family: var(--font-family);
+}
+.header-sub {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+
+.header_background .cover_img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  margin: 0%;
+  object-fit: cover;
+}
+.parent_container {
+  position: absolute;
+  margin-top: 8rem;
+  width: 99%;
+  color: var(--third-color);
+  text-transform: capitalize;
+  font-family: var(--font-family);
+  text-align: center;
+  top: 30%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: right;
+  z-index: 1;
+}
+
+.child-container {
+  position: relative;
+  right: 10%;
+  border-radius: 15px;
+  padding: 10px;
+  height: 200px;
+}
+.child_head_text {
+  font-size: 40px;
+}
+.child_head_text-p {
+  font-size: 30px;
+}
+.register_button {
+  padding: 10px 50px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid var(--third-color);
+  color: var(--third-color);
+}
+.discreption_parent {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+}
+.discreption_child {
+  display: inline-block;
+  color: var(--third-color);
+  width: 600px;
+  margin: 10px;
+  height: 200px;
+  font-size: 26px;
+  padding: 10px;
+  height: 200px;
+}
+.content_discreption {
+  background-color: var(--third-color);
+  padding: 10px;
+  margin-top: 20px;
+  height: 400px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  padding: 3rem;
+  text-align: center;
+  display: block;
+  margin-right: 30px;
+}
+.content_text {
+  font-size: 20px;
+  margin-top: 40px;
+  font-family: var(--font-family);
+}
+.content_text_sub {
+  color: var(--third-color);
+  text-align: center;
+  font-size: 23px;
+  padding: 40px;
+}
+.button_sub {
+  display: flex;
+  justify-self: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+}
+.near_footer {
+  padding: 10px;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 20px;
+  border-bottom: 2px solid var(--secondary-color);
+  background-color: var(--forth_color);
+}
+footer {
+  background-color: var(--forth_color);
+  padding: 50px;
+}
+.info_Support {
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  border-bottom: 2px solid var(--firth-color);
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+}
+.info_Support:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+#support {
+  display: inline-block;
+  margin: 30px;
+}
+.info_p {
+  color: var(--sixth-color);
+}
+.or_line {
+  color: var(--secondary-color);
+  padding: 10px;
+}
+.CopyRight-Content {
+  margin-top: 60px;
+  display: flex;
+  justify-self: center;
+  color: var(--sixth-color);
+  font: 2px;
+}
+/* Responsive: hide nav links and show hamburger */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 60px;
+    left: 70%;
+    width: 20%; /* Full width */
+    padding: 0%;
+    width: 200px;
+    height: auto;
+    font-size: 30px;
+    border-bottom: 1px solid var(--secondary-color);
+    z-index: 1000;
+  }
+
+  .ff-logo {
+    width: 290px;
+    height: 100px;
+  }
+  .nav-links li {
+    text-align: center;
+    border-bottom: 1px solid var(--secondary-color);
+  }
+  .nav-links li:hover {
+    border-bottom: 1px solid var(--secondary-color);
+  }
+
+  .nav-links a {
+    font-size: 20px;
+    display: block;
+    color: var(--secondary-color);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    z-index: 1001;
+  }
+
+  .hamburger-line {
+    width: 50px;
+    height: 4px;
+    padding: 2px;
+    background-color: var(--secondary-color);
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+
+  .navbar-Serction {
+    flex-wrap: wrap;
+  }
+  .parent_container {
+    position: absolute;
+    margin-top: 0rem;
+    width: 99%;
+    color: var(--third-color);
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    top: 20%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  .child-container {
+    left: 0%;
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    height: 200px;
+  }
+  .register_button {
+    margin: 0%;
+    width: 250px;
+    font-size: 30px;
+  }
+}
+/* Add this to your existing CSS */
