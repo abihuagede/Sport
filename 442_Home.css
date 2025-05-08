@@ -110,7 +110,7 @@ body {
 
 .header_text {
   text-align: center;
- padding-bottom: 30px;
+  padding-bottom: 30px;
   text-transform: capitalize;
   color: var(--secondary-color);
   font-family: var(--font-family);
@@ -331,6 +331,7 @@ footer {
     position: absolute;
     margin-top: 0rem;
     width: 99%;
+
     color: var(--third-color);
     text-transform: capitalize;
     font-family: var(--font-family);
@@ -342,9 +343,11 @@ footer {
   }
   .child-container {
     left: 0%;
+    min-width: 1000;
     position: relative;
     border-radius: 15px;
     padding: 20px;
+
     height: 200px;
   }
   .register_button {
