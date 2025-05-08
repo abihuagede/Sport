@@ -1,6 +1,6 @@
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });
