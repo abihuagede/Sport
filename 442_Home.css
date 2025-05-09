@@ -19,7 +19,8 @@
 }
 
 body {
-  margin: 0;
+  margin: 0%;
+  padding: 0%;
   font-family: var(--font-family);
   margin-top: 100px;
   background-color: var(--primary-color);
@@ -27,7 +28,7 @@ body {
 
 .navbar-Serction {
   z-index: 2;
-  min-height: 100px;
+  margin: 0%;
   top: 0%;
   display: flex;
   list-style: none;
@@ -40,9 +41,8 @@ body {
 }
 
 .ff-logo {
-  width: 180px;
+  width: 100px;
   margin-left: 13px;
-  margin-top: 0%;
 }
 .nav_link {
   position: absolute;
@@ -63,7 +63,7 @@ body {
   z-index: 1000;
   list-style: none;
   border: 2px solid var(--secondary-color);
-  padding: 10px;
+  padding: 4px;
 }
 
 .nav-links li a {
@@ -97,7 +97,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 10px;
-
   border-radius: 5px;
   z-index: 1;
   cursor: pointer;
@@ -115,9 +114,8 @@ body {
 
 .header_text {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 
-  padding-top: 50px;
   text-transform: capitalize;
   color: var(--secondary-color);
   font-family: var(--font-family);
@@ -151,7 +149,7 @@ body {
   text-transform: capitalize;
   font-family: var(--font-family);
   text-align: center;
-  top: 30%;
+  top: 50%;
   margin-bottom: 10px;
   display: flex;
   justify-content: right;
@@ -161,6 +159,7 @@ body {
 .child-container {
   position: relative;
   right: 10%;
+
   border-radius: 15px;
   padding: 10px;
   height: 200px;
@@ -245,7 +244,6 @@ body {
   color: var(--third-color);
 }
 .near_footer {
-  padding: 10px;
   text-align: center;
   margin-top: 30px;
   color: var(--secondary-color);
@@ -255,20 +253,19 @@ body {
 }
 footer {
   background-color: var(--forth_color);
-  padding: 50px;
+  padding-top: 20px;
+  text-align: center;
+  height: auto;
+  vertical-align: bottom;
 }
 .info_Support {
   height: 100px;
   text-align: center;
-  padding: 10px;
   width: 100%;
-  padding: 10px;
   display: flex;
   font-family: var(--font-family);
-  flex-direction: row;
-  max-width: 1200px;
+
   border-bottom: 2px solid var(--firth-color);
-  gap: 20px;
   justify-content: center;
   margin: auto;
 }
@@ -277,11 +274,17 @@ footer {
 }
 #support {
   display: inline-block;
-  margin: 30px;
+  margin: 0px;
 }
 .info_p {
+  font-size: 10px;
   color: var(--sixth-color);
   font-family: var(--font-family);
+}
+.info_p:hover {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  cursor: pointer;
 }
 .or_line {
   color: var(--secondary-color);
@@ -289,18 +292,28 @@ footer {
   padding: 10px;
 }
 .CopyRight-Content {
-  margin-top: 60px;
-  display: flex;
-  justify-self: center;
+  padding: 10px;
+  vertical-align: bottom;
+  font-size: 9px;
+ 
   color: var(--sixth-color);
   font-family: var(--font-family);
   font: 2px;
 }
 
 /* Responsive: hide nav links and show hamburger */
-@media (max-width: 900px) {
+@media (max-width: 740px) {
+  .discreption_parent {
+    display: block;
+    max-width: 1200px;
+    text-align: center;
+  }
+  .discreption_child {
+    padding: 10px;
+    width: auto;
+  }
   .ff-logo {
-    width: 290px;
+    width: 190px;
     height: 100px;
   }
   .nav-links li {
@@ -351,7 +364,7 @@ footer {
     color: var(--third-color);
     text-transform: capitalize;
     font-family: var(--font-family);
-    top: 20%;
+    top: 50%;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -359,17 +372,41 @@ footer {
   }
   .child-container {
     left: 0%;
-    min-width: 1000;
     position: relative;
     border-radius: 15px;
     padding: 20px;
-
-    height: 200px;
+    text-shadow: 5px 5px 10px var(--primary-color);
   }
   .register_button {
     margin: 0%;
     width: 250px;
     font-size: 30px;
+  }
+
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    width: 400px;
+    padding-bottom: 20px;
+    background-color: var(--forth_color);
+  }
+  .security_icon {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 15px;
+    text-align: center;
+  }
+  .Login_button {
+    display: block;
+    justify-self: center;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--third-color);
   }
 }
 
@@ -379,11 +416,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+
+  margin-top: 10%;
   margin-bottom: 50px;
 }
 form {
   width: 400px;
+
   padding-bottom: 20px;
   background-color: var(--forth_color);
 }
@@ -450,11 +489,7 @@ input:focus {
   border-bottom: 2px solid var(--secondary-color);
   background-color: var(--forth_color);
 }
-.footer_login {
-  background-color: var(--forth_color);
-  padding: 50px;
-  vertical-align: bottom;
-}
+
 .near_footer_login {
   padding: 10px;
   text-align: center;
@@ -474,16 +509,19 @@ input:focus {
   text-align: center;
 }
 .category {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  text-align: center;
   font-family: var(--font-family);
   margin-top: 50px;
 }
 .category_item {
   background-color: var(--forth_color);
-  padding: 10px;
-  width: 240px;
+
+  display: inline-block;
+  justify-self: center;
+  vertical-align: top;
+
+  width: 250px;
   height: 200px;
   margin: 10px;
   text-align: center;
@@ -501,6 +539,8 @@ input:focus {
   vertical-align: top;
   padding-bottom: 10px;
 }
-.main_logo_large{
+.main_logo_large {
   text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
