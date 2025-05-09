@@ -115,7 +115,7 @@ body {
 .header_text {
   text-align: center;
   padding-bottom: 10px;
-
+ 
   text-transform: capitalize;
   color: var(--secondary-color);
   font-family: var(--font-family);
@@ -240,12 +240,13 @@ body {
   font-weight: bold;
   font-family: var(--font-family);
   border: none;
+  margin-bottom: 30px;
   background-color: var(--button-color);
   color: var(--third-color);
 }
 .near_footer {
   text-align: center;
-  margin-top: 30px;
+  padding-top: 10px;
   color: var(--secondary-color);
   font-size: 20px;
   border-bottom: 2px solid var(--secondary-color);
@@ -255,7 +256,7 @@ footer {
   background-color: var(--forth_color);
   padding-top: 20px;
   text-align: center;
-  height: auto;
+ 
   vertical-align: bottom;
 }
 .info_Support {
@@ -303,6 +304,10 @@ footer {
 
 /* Responsive: hide nav links and show hamburger */
 @media (max-width: 740px) {
+  .header_text{
+    font-size: 10px;
+    padding-top: 20px;
+  }
   .discreption_parent {
     display: block;
     max-width: 1200px;
