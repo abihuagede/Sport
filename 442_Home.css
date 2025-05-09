@@ -14,6 +14,7 @@
 }
 * {
   transition: 1s ease-in-out;
+  min-width: 20px;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 
 .navbar-Serction {
   z-index: 2;
-
+  min-height: 100px;
   top: 0%;
   display: flex;
   list-style: none;
@@ -357,4 +358,74 @@ footer {
     font-size: 30px;
   }
 }
-/* Add this to your existing CSS */
+
+/* Responsive:loginform */
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+form {
+  width: 400px;
+  padding-bottom: 20px;
+  background-color: var(--forth_color);
+}
+.security_icon {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 15px;
+}
+.Login_button {
+  display: block;
+  justify-self: center;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--button-color);
+  color: var(--third-color);
+}
+.form-group {
+  color: var(--third-color);
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  display: block;
+  padding: 10px;
+  justify-self: center;
+}
+label {
+  border: 1px solid var(--secondary-color);
+  margin: 0%;
+  padding: 9px;
+
+  color: var(--third-color);
+  font-family: var(--font-family);
+}
+input {
+  outline: 1px solid var(--secondary-color);
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+}
+input::placeholder {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+input:focus {
+  outline: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.near_footer_login {
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--secondary-color);
+  font-size: 20px;
+  border-bottom: 2px solid var(--secondary-color);
+  background-color: var(--forth_color);
+}
+.footer_login {
+  background-color: var(--forth_color);
+  padding: 50px;
+}
