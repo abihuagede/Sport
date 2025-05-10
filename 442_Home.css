@@ -41,7 +41,7 @@ body {
 }
 
 .ff-logo {
-  width: 100px;
+  width: 130px;
   margin-left: 13px;
 }
 .nav_link {
@@ -115,7 +115,7 @@ body {
 .header_text {
   text-align: center;
   padding-bottom: 10px;
- 
+
   text-transform: capitalize;
   color: var(--secondary-color);
   font-family: var(--font-family);
@@ -256,7 +256,7 @@ footer {
   background-color: var(--forth_color);
   padding-top: 20px;
   text-align: center;
- 
+
   vertical-align: bottom;
 }
 .info_Support {
@@ -295,7 +295,7 @@ footer {
 .CopyRight-Content {
   padding: 10px;
   vertical-align: bottom;
-  font-size: 9px;
+  font-size: 13px;
 
   color: var(--sixth-color);
   font-family: var(--font-family);
@@ -304,7 +304,7 @@ footer {
 
 /* Responsive: hide nav links and show hamburger */
 @media (max-width: 740px) {
-  .header_text{
+  .header_text {
     font-size: 10px;
     padding-top: 20px;
   }
@@ -360,6 +360,9 @@ footer {
 
   .navbar-Serction {
     flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    top: 0%;
   }
   .parent_container {
     position: absolute;
@@ -393,7 +396,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  form {
+  .login_f {
     width: 400px;
     padding-bottom: 20px;
     background-color: var(--forth_color);
@@ -459,7 +462,7 @@ form {
   padding: 10px;
   padding-left: 50px;
 }
-label {
+.login_label {
   border-bottom: 1px solid var(--secondary-color);
   margin: 0%;
   border-left: 1px solid var(--secondary-color);
@@ -470,18 +473,18 @@ label {
   color: var(--third-color);
   font-family: var(--font-family);
 }
-input {
+.login_input {
   outline: 1px solid var(--secondary-color);
   border: none;
   padding: 11px;
   margin: 0%;
   background-color: transparent;
 }
-input::placeholder {
+.login_input::placeholder {
   color: var(--secondary-color);
   font-family: var(--font-family);
 }
-input:focus {
+.login_input:focus {
   outline: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
@@ -548,4 +551,137 @@ input:focus {
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+
+/*associate form */
+.header_text_Assoc {
+  background-color: var(--forth_color);
+  text-align: center;
+  font-family: var(--font-family);
+  color: var(--third-color);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.description_assoction {
+  color: var(--third-color);
+  font-family: var(--font-family);
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+.form_logo {
+  font-size: 2rem;
+  width: 50%;
+  display: flex;
+  
+  justify-self: center;
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+.upload-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #1e90ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #00bfff;
+}
+
+.upload-box img {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+  object-fit: contain;
+}
+
+.upload-box p {
+  color: #00bfff;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input[type="file"] {
+  display: none;
+}
+.add_logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.assoc_form {
+  margin: auto;
+  width: 50%;
+  
+  background-clip: border-box;
+  background: none;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+.p_contact{
+  display: flex;
+}
+.assoc_label{
+  display: block;
+  
+}
+.assoc_group_input{
+  padding: 1px;
+  box-sizing: border-box;
+}
+.Enter_input[type="text"]{
+  width: 70%;
+  padding: 10px;
+  margin: 0%;
+
+  margin-top: 10px;
+  border: 1px solid var(--secondary-color);
+  background: transparent;
+  outline: none;
+}
+.Enter_input[type="text"]:focus{
+  outline: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.Enter_input[type="text"]::placeholder{
+  color: var(--third-color);
+}
+.Select_Region{
+  width: 70%;
+  padding: 10px;
+  margin: 0%;
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+ color: var(--third-color);
+  outline: none;
+}
+.Select_Region:focus{
+  outline: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.Select_Region:hover{
+  color: var(--button-color);
+}
+.Select_Region::placeholder{
+  color: var(--third-color);
+  text-align: center;
+}
+.Region_header{
+  text-align: center;
+  font-family: var(--font-family);
+  color: var(--third-color);
+  padding: 10px;
+  background-color: var(--forth_color);
 }
