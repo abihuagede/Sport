@@ -43,7 +43,91 @@
         <p class="add_team_logo">Logo</p>
       </div>
     </section>
-
+    <section>
+      <div class="add_logo">
+        <div
+          class="upload-box"
+          onclick="document.getElementById('fileInput').click();"
+        >
+          <img id="logoPreview" src="" alt="Logo Preview" />
+          <p id="uploadText">Add Logo</p>
+          <input
+            type="file"
+            id="fileInput"
+            accept="image/*"
+            onchange="previewLogo(event)"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="form_upload_logo">
+      <p class="add_team_logo">Contact</p>
+    </div>
+    <section>
+      <div class="box_Form">
+        <form class="assoc_form" action="">
+          <div class="assoc_group_input">
+            <label class="assoc_label" for="name">name</label>
+            <input
+              type="text"
+              class="Enter_input"
+              placeholder="Enter"
+              required
+            />
+            <label class="assoc_label" for="name">Email</label>
+            <input
+              type="text"
+              class="Enter_input"
+              placeholder="Enter"
+              required
+            />
+            <label class="assoc_label" for="name">Phone Number</label>
+            <input
+              type="text"
+              class="Enter_input"
+              placeholder="Enter"
+              required
+            />
+            <label class="assoc_label" for="name">Town</label>
+            <input
+              type="text"
+              class="Enter_input"
+              placeholder="Enter"
+              required
+            />
+            <label class="assoc_label" for="name">City</label>
+            <input
+              type="text"
+              class="Enter_input"
+              placeholder="Enter"
+              required
+            />
+            <label class="assoc_label" for="region">Select Region:</label>
+            <select class="Select_Region" id="region" name="region" required>
+              <option class="Region_header" value="">
+                -- Select Region --
+              </option>
+              <option value="Greater Accra">Greater Accra</option>
+              <option value="Ashanti">Ashanti</option>
+              <option value="Eastern">Eastern</option>
+              <option value="Western">Western</option>
+              <option value="Central">Central</option>
+              <option value="Volta">Volta</option>
+              <option value="Northern">Northern</option>
+              <option value="Upper East">Upper East</option>
+              <option value="Upper West">Upper West</option>
+              <option value="Bono">Bono</option>
+              <option value="Bono East">Bono East</option>
+              <option value="Ahafo">Ahafo</option>
+              <option value="Savannah">Savannah</option>
+              <option value="North East">North East</option>
+              <option value="Western North">Western North</option>
+              <option value="Oti">Oti</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
     <section>
       <div class="near_footer_login">
         <p>Want more Info?</p>
@@ -73,6 +157,6 @@
       </h3>
     </footer>
     <script src="442_home.js"></script>
-    <script src="442_login.js"></script>
+    <script src="Association_Registration.js"></script>
   </body>
 </html>
