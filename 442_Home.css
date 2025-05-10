@@ -419,19 +419,6 @@ footer {
     background-color: var(--button-color);
     color: var(--third-color);
   }
-
-  .Enter_input {
-    width: 60%; /* Make it responsive to the container */
-    min-width: 300px; /* Ensure a minimum width */
-    max-width: 600px; /* Limit the maximum width */
-    padding: 10px; /* Add padding for better usability */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    margin: 10px auto; /* Center the input and add spacing */
-  }
-  .box_Form {
-    max-width: 1200px;
-    background-color: var(--text-color);
-  }
 }
 
 /* Responsive:loginform */
@@ -640,25 +627,72 @@ form {
 .box_Form {
   display: flex;
   justify-content: center;
-  margin: 0%;
-  background-color: transparent;
-  padding: 0%;
-}
-.assoc_form {
   padding: 20px;
-  margin: 0%;
 }
-.assoc_group_input {
-  display: block;
 
-  margin: 10px;
+.assoc_form {
+  width: 100%;
+  max-width: 500px;
+  background: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
+
+.assoc_group_input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .assoc_label {
-  margin: auto;
+  font-size: 19px;
+  padding: 5px;
   color: var(--secondary-color);
 }
-.Enter_input {
-  display: block;
-  width: 100%;
+.Enter_input::placeholder {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+.Enter_input:focus {
+  outline: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.Enter_input,
+.Select_Region {
   padding: 10px;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.Select_Region {
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--secondary-color);
+  width: 100%;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#Category {
+  margin-top: 10px;
+}
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .assoc_form {
+    padding: 15px;
+  }
+
+  .assoc_label {
+    font-size: 14px;
+  }
+
+  .Enter_input,
+  .Select_Region {
+    font-size: 14px;
+  }
 }

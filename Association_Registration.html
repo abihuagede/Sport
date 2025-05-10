@@ -70,6 +70,7 @@
             <label class="assoc_label" for="name">name</label>
             <input
               type="text"
+              id="name"
               class="Enter_input"
               placeholder="Enter"
               required
@@ -77,27 +78,31 @@
             <label class="assoc_label" for="name">Email</label>
             <input
               type="text"
+              id="Email"
               class="Enter_input"
               placeholder="Enter"
               required
             />
-            <label class="assoc_label" for="name">Phone Number</label>
+            <label class="assoc_label" for="Phone">Phone Number</label>
             <input
               type="text"
+              class="Enter_input"
+              id="Phone"
+              placeholder="Enter"
+              required
+            />
+            <label class="assoc_label" for="Town">Town</label>
+            <input
+              type="text"
+              id="Town"
               class="Enter_input"
               placeholder="Enter"
               required
             />
-            <label class="assoc_label" for="name">Town</label>
+            <label class="assoc_label" for="City">City</label>
             <input
               type="text"
-              class="Enter_input"
-              placeholder="Enter"
-              required
-            />
-            <label class="assoc_label" for="name">City</label>
-            <input
-              type="text"
+              id="City"
               class="Enter_input"
               placeholder="Enter"
               required
@@ -124,6 +129,71 @@
               <option value="Western North">Western North</option>
               <option value="Oti">Oti</option>
             </select>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="form_upload_logo" id="underline">
+        <p class="add_team_logo">Official</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="box_Form">
+        <form class="assoc_form" action="">
+          <div>
+            <label class="assoc_label" for="Category">Select Category:</label>
+            <select class="Select_Region" id="Category" name="region" required>
+              <option class="Region_header" value="">
+                -- Select Category --
+              </option>
+              <option value="Private None GFA/RFA ">
+                Private None GFA/RFA
+              </option>
+              <option value="Regional Football Association">
+                Regional Football Association
+              </option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="form_upload_logo" id="underline">
+        <p class="add_team_logo">Representative</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="box_Form">
+        <form class="assoc_form" action="">
+          <div>
+            <label class="assoc_label" for="Category"
+              >Representative Title</label
+            >
+            <select class="Select_Region" id="Category" name="region" required>
+              <option class="Region_header" value="">-- Select --</option>
+              <option value="mr ">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Miss">Miss</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="box_Form">
+        <form class="assoc_form" action="">
+          <div>
+            <label class="assoc_label" for="Town">Representative Name</label>
+            <input
+              type="text"
+              id="Representative"
+              class="Enter_input"
+              placeholder="Enter"
+              required
+            />
           </div>
         </form>
       </div>
