@@ -572,132 +572,22 @@ form {
 /*associate form */
 .header_text_Assoc {
   background-color: var(--forth_color);
+  padding: 10px;
   text-align: center;
-  font-family: var(--font-family);
   color: var(--third-color);
-  padding: 15px;
-  width: 100%;
-  margin-bottom: 10px;
+  font-family: var(--font-family);
 }
 .description_assoction {
-  color: var(--third-color);
-  font-family: var(--font-family);
   text-align: center;
-  font-size: 1rem;
   padding: 10px;
-  border-bottom: 1px solid var(--secondary-color);
-}
-.form_logo {
-  font-size: 2rem;
-  width: 50%;
-  display: flex;
-
-  justify-self: center;
-  color: var(--secondary-color);
-  font-family: var(--font-family);
-}
-.upload-box {
-  width: 150px;
-  height: 150px;
-  border: 2px solid #1e90ff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  transition: border-color 0.3s ease;
-}
-
-.upload-box:hover {
-  border-color: #00bfff;
-}
-
-.upload-box img {
-  max-width: 100%;
-  max-height: 100%;
-  display: none;
-  object-fit: contain;
-}
-
-.upload-box p {
-  color: #00bfff;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-input[type="file"] {
-  display: none;
-}
-.add_logo {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-}
-.assoc_form {
-  margin: auto;
-
-  margin-bottom: 30px;
-  background-clip: border-box;
-  padding: 15px;
-  color: var(--secondary-color);
-  font-size: 1.2rem;
-}
-.p_contact {
-  display: flex;
-}
-.assoc_label {
-  display: block;
-}
-.assoc_group_input {
-  padding: 1px;
-  box-sizing: border-box;
-}
-.Enter_input {
-  width: 100%;
-  padding: 10px; /* Add padding for better usability */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
-  margin: 10px auto;
-  background: transparent;
-  border: 1px solid var(--secondary-color); /* Center the input and add spacing */
-}
-.Enter_input:focus {
-  outline: 1px solid var(--secondary-color);
-  color: var(--secondary-color);
-}
-.Enter_input::placeholder {
   color: var(--third-color);
 }
-.Select_Region {
-  width: 100%; /* Make it responsive to the container */
-  /* Limit the maximum width */
-  padding: 10px; /* Add padding for better usability */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
-  margin: 10px auto; /* Center the element and add spacing */
-  font-size: 16px; /* Adjust font size for readability */
-  border: 1px solid var(--secondary-color); /* Add a border for better visibility */
-  border-radius: 5px; /* Add rounded corners */
-  background-color: var(--forth_color); /* Set background color */
-  color: var(--third-color); /* Set text color */
-}
-.Select_Region:focus {
-  outline: 1px solid var(--secondary-color);
-  color: var(--secondary-color);
-}
-.Select_Region:hover {
-  color: var(--button-color);
-}
-.Select_Region::placeholder {
-  color: var(--third-color);
+.form_upload_logo {
   text-align: center;
-}
-.Region_header {
-  text-align: center;
-  font-family: var(--font-family);
-  color: var(--third-color);
   padding: 10px;
-  background-color: var(--forth_color);
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  font-weight: bold;
+  width: 70%;
+  font-size: 20px;
 }
