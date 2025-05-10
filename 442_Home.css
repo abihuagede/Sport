@@ -701,6 +701,21 @@ form {
   padding: 10px;
   margin: auto;
 }
+.next{
+ display: flex;
+ justify-self: center;
+ margin-top: 30px;
+  padding: 20px 35px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--button-color);
+  color: var(--third-color);
+}
+.next:hover {
+  padding: 20px 35px;
+  background-color: var(--third-color);
+  color: var(--button-color);
+}
 /* Responsive tweaks */
 @media (max-width: 600px) {
   .assoc_form {
