@@ -6,9 +6,23 @@ function previewLogo(event) {
       const img = document.getElementById("logoPreview");
       img.src = e.target.result;
       img.style.display = "block";
-      document.getElementById("uploadText").style.display = "none";
-      
+      const uploAd = document.getElementById("uploadText");
+      uploAd.style.display = "none";
+      localStorage.setItem("logo", e.target.result); // Save the logo in localStorage
     };
     reader.readAsDataURL(file);
   }
 }
+// Ensure the logo persists after a page refresh
+window.addEventListener("load", function () {
+  const savedLogo = localStorage.getItem("logo");
+  if (savedLogo) {
+    const img = document.getElementById("logoPreview");
+    img.src = savedLogo;
+    img.style.display = "block";
+    const uploAd = document.getElementById("uploadText");
+    if (uploAd) {
+      uploAd.style.display = "none";
+    }
+  }
+});
