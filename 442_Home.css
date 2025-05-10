@@ -415,10 +415,7 @@ footer {
     background-color: var(--button-color);
     color: var(--third-color);
   }
-  .assoc_form {
-    width: 100%;
-    margin: auto;
-  }
+
   .Enter_input {
     width: 100%; /* Make it responsive to the container */
     min-width: 300px; /* Ensure a minimum width */
@@ -633,10 +630,10 @@ input[type="file"] {
 }
 .assoc_form {
   margin: auto;
-  width: 50%;
-
+  width: 500px;
+  margin-bottom: 30px;
   background-clip: border-box;
-  background: none;
+  padding: 15px;
   color: var(--secondary-color);
   font-size: 1.2rem;
 }
@@ -656,7 +653,16 @@ input[type="file"] {
   max-width: 600px; /* Limit the maximum width */
   padding: 10px; /* Add padding for better usability */
   box-sizing: border-box; /* Ensure padding doesn't affect width */
-  margin: 10px auto; /* Center the input and add spacing */
+  margin: 10px auto;
+  background: transparent;
+  border: 1px solid var(--secondary-color); /* Center the input and add spacing */
+}
+.Enter_input:focus {
+  outline: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.Enter_input::placeholder {
+  color: var(--third-color);
 }
 .Select_Region {
   width: 100%; /* Make it responsive to the container */
@@ -669,7 +675,7 @@ input[type="file"] {
   border: 1px solid var(--secondary-color); /* Add a border for better visibility */
   border-radius: 5px; /* Add rounded corners */
   background-color: var(--forth_color); /* Set background color */
-  color: var(--primary-color); /* Set text color */
+  color: var(--third-color); /* Set text color */
 }
 .Select_Region:focus {
   outline: 1px solid var(--secondary-color);
