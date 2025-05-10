@@ -106,7 +106,7 @@ body {
 .hamburger-line {
   width: 30px; /* Adjust width for a smaller toggle menu */
   height: 3px;
- 
+
   background-color: var(--secondary-color);
   margin: 4px 0;
   border-radius: 2px;
@@ -346,7 +346,7 @@ footer {
     padding: 10px;
     margin-left: 30px;
     border-radius: 5px;
-    z-index:  1;
+    z-index: 1;
   }
 
   .hamburger-line {
@@ -569,6 +569,7 @@ form {
   font-family: var(--font-family);
   color: var(--third-color);
   padding: 15px;
+  width: 100%;
   margin-bottom: 10px;
 }
 .description_assoction {
