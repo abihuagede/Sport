@@ -7,3 +7,6 @@ hamburger.addEventListener("click", () => {
 function Regis_Form() {
   window.location.href = "442_register.html";
 }
+function RegisterCat() {
+  window.location.href = "442_register.html";
+}
