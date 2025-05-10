@@ -97,7 +97,7 @@ body {
   align-items: flex-start;
   padding: 10px;
   border-radius: 5px;
-  z-index: 1;
+  z-index: -1;
   cursor: pointer;
   /* REMOVE absolute positioning */
   position: static;
@@ -106,6 +106,7 @@ body {
 .hamburger-line {
   width: 30px; /* Adjust width for a smaller toggle menu */
   height: 3px;
+ 
   background-color: var(--secondary-color);
   margin: 4px 0;
   border-radius: 2px;
@@ -345,7 +346,7 @@ footer {
     padding: 10px;
     margin-left: 30px;
     border-radius: 5px;
-    z-index: 1001;
+    z-index:  1;
   }
 
   .hamburger-line {
@@ -415,7 +416,6 @@ footer {
     background-color: var(--button-color);
     color: var(--third-color);
   }
-  
 
   .Enter_input {
     width: 60%; /* Make it responsive to the container */
