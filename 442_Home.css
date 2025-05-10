@@ -415,6 +415,15 @@ footer {
     background-color: var(--button-color);
     color: var(--third-color);
   }
+  .assoc_form {
+    margin: auto;
+    width: 200px;
+    margin-bottom: 30px;
+    background-clip: border-box;
+    padding: 15px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+  }
 
   .Enter_input {
     width: 100%; /* Make it responsive to the container */
