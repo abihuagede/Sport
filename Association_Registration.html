@@ -172,32 +172,46 @@
             <label class="assoc_label" for="Category"
               >Representative Title</label
             >
-            <select class="Select_Region" id="Category" name="region" required>
+            <select
+              class="Select_Region"
+              id="Category"
+              name="Category"
+              required
+            >
               <option class="Region_header" value="">-- Select --</option>
               <option value="mr ">Mr</option>
               <option value="Mrs">Mrs</option>
               <option value="Miss">Miss</option>
             </select>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section>
-      <div class="box_Form">
-        <form class="assoc_form" action="">
-          <div>
             <label class="assoc_label" for="Town">Representative Name</label>
             <input
               type="text"
-              id="Representative"
+              id="Representative_name"
               class="Enter_input"
-              placeholder="Enter"
+              placeholder="Enter Surname + Names"
+              required
+            /><label class="assoc_label" for="Town"
+              >RepresentativePosition in the Association
+            </label>
+            <input
+              type="text"
+              id="Representative_name"
+              class="Enter_input"
+              placeholder="Enter "
               required
             />
           </div>
         </form>
       </div>
     </section>
+    <section>
+      <div class="form_upload_logo" id="underline">
+        <p class="add_team_logo">Select Registration Type</p>
+      </div>
+    </section>
+    <div class="boxfees">
+      <p>0.0 GHS</p>
+    </div>
     <section>
       <div class="near_footer_login">
         <p>Want more Info?</p>
