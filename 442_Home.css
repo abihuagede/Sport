@@ -339,7 +339,7 @@ footer {
   }
   .lOGO_NAME {
     font-family: var(--logo-family);
-    color: var(--secondary-color);
+    color: var(--third-color);
     font-size: 20px;
 
     padding-top: px;
