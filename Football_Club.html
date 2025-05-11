@@ -34,7 +34,7 @@
     </nav>
     <section>
       <div class="header_text_Assoc">
-        <h1 class="header_ass">Football Association Registration</h1>
+        <h1 class="header_ass">Football Club Registration</h1>
       </div>
       <div class="description_assoction">
         <p class="description_text_p">
@@ -155,13 +155,49 @@
               <option class="Region_header" value="">
                 -- Select Category --
               </option>
-              <option value="Private None GFA/RFA ">
-                Private None GFA/RFA
+              <option value="GFA Registered ">GFA Registered</option>
+              <option value="Regional Football Association">
+                RFA Registered
               </option>
               <option value="Regional Football Association">
-                Regional Football Association
+                Unregistered.
               </option>
             </select>
+          </div>
+          <div>
+            <label class="assoc_label" for="Category">Select Division:</label>
+            <select class="Select_Region" id="Category" name="region" required>
+              <option class="Region_header" value="">
+                -- Select Category --
+              </option>
+              <option value="GFA Registered ">Premier Div</option>
+              <option value="Regional Football Association">1st Div</option>
+              <option value="Regional Football Association">2nd Div</option>
+              <option value="Regional Football Association">3nd Div</option>
+              <option value="Regional Football Association">Others</option>
+            </select>
+            <div>
+              <label class="assoc_label" for="Category"
+                >Select Gender Category</label
+              >
+              <select
+                class="Select_Region"
+                id="Category"
+                name="region"
+                required
+              >
+                <option class="Region_header" value="">
+                  -- Select Category --
+                </option>
+                <option value="GFA Registered ">Premier Div</option>
+                <option value="Regional Football Association">
+                  Male Football Club
+                </option>
+                <option value="Regional Football Association">
+                  Female Football Club
+                </option>
+              </select>
+            </div>
           </div>
         </form>
       </div>
@@ -226,7 +262,6 @@
     </div>
     <section>
       <button class="next">Next</button>
-
       <div class="verifcation_otp_box_hidden">
         <div class="verification-container">
           <h1>Email Verification</h1>
