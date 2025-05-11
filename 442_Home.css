@@ -783,12 +783,12 @@ form {
   position: fixed;
   top: 30%;
   width: 100%;
-  display: block;
 }
 .verification-container {
   position: relative;
+  display: none;
   justify-self: center;
-  z-index: 1;
+  z-index: 4;
   background-color: var(--primary-color);
   padding: 30px;
   color: var(--secondary-color);

@@ -54,3 +54,41 @@ inputs.forEach((input, index) => {
     }
   });
 });
+function previewLogo(event) {
+  const input = event.target;
+  const preview = document.getElementById("logoPreview");
+  const uploadText = document.getElementById("uploadText");
+
+  if (input.files && input.files[0]) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      preview.src = e.target.result;
+      preview.style.display = "block";
+      uploadText.style.display = "none";
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+const pop_next = document.querySelector(".next");
+const verification_box = document.querySelector(".verification-container");
+
+// Toggle the popup display when the "next" button is clicked
+pop_next.addEventListener("click", function (e) {
+  e.preventDefault();
+  verification_box.style.display =
+    verification_box.style.display === "block" ? "none" : "block";
+});
+
+// Hide the popup when clicking outside of it
+document.addEventListener("click", function (e) {
+  if (
+    verification_box.style.display === "block" && // Check if the popup is visible
+    !verification_box.contains(e.target) && // Check if the click is outside the popup
+    !pop_next.contains(e.target) // Ensure the click is not on the "next" button
+  ) {
+    verification_box.style.display = "none";
+  }
+});
